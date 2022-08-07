@@ -8,7 +8,7 @@
 }
 
 section {
-    padding: 75px 15%;
+    padding: 150px 15%;
 }
 
 /* Start home */
@@ -42,13 +42,13 @@ section {
 }
 
 .home-text h5 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
 .home-text h1 {
-    font-size: 4.4rem;
+    font-size: 6rem;
     color: blue;
     font-weight: 900;
     line-height: 1;
@@ -59,7 +59,7 @@ section {
 .home-text p {
     max-width: 100%;
     width: 430px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     line-height: 1.8;
     margin-bottom: 35px;
     text-shadow: 5px 5px 20px #ff0000;
@@ -68,7 +68,7 @@ section {
 
 .btn1 {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 20px 30px;
     color: white;
     background-color: blue;
     border-radius: 50px;
@@ -79,6 +79,7 @@ section {
 
 a {
     text-decoration: none;
+    font-size: 23px;
 }
 
 .btn1:hover {
@@ -327,8 +328,191 @@ button {
 
     }
 }
-
+@media (max-width:750px) {
+.btn1{
+    padding: 10px 30px;
+}
+}
 /* End contact */
+
+/* Start portoflio */
+.section-portoflio {
+    padding: 75px 5%;
+}
+.portoflio{
+    background-color: #DFF6FF;}
+    .portoflio h2{
+        font-size: 3.4rem;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 35px;
+        margin-top: 20px;
+        color: blue;
+        text-shadow: 2px 2px #ff0000;
+    }
+    .portoflio-container{
+        
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 50px;
+     align-items: center;
+    }
+    .box{
+        height: 500px;
+        width: auto;
+        border-radius: 10px;
+        transition: all .8s;
+        overflow: hidden;
+        position: relative;
+       
+    }
+    .box-1{
+        background-image: url(img/orange.JPG);
+      background-position: left;
+     background-repeat: no-repeat;
+    }
+    .box-2{
+        background-image: url(img/start-bootstrap.JPG);
+        background-position: left;
+        background-repeat: no-repeat;
+     
+    }
+    .box-3{
+        background-image: url(img/blog.JPG);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .box-4{
+        background-image: url(img/store.JPG);
+        background-position: left;
+        background-repeat: no-repeat;
+     
+    }
+    .box-5{
+        background-image: url(img/calc.JPG);
+      background-position: left;
+     background-repeat: no-repeat;
+    }
+    .box-6{
+        background-image: url(img/grid.JPG);
+        background-position: left;
+        background-repeat: no-repeat;
+     
+    }
+    .box-7{
+        background-image: url(img/contact.JPG);
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    .box-8{
+        background-image: url(img/weather.JPG);
+        background-position: left;
+        background-repeat: no-repeat;
+     
+    }
+    .box-9{
+        background-image: url(img/user.JPG);
+      background-position: left;
+     background-repeat: no-repeat;
+    }
+    
+    .box-1:hover{
+        transform: scale(1.1);
+      background-position: right;
+      box-shadow: 5px 5px 11px 0px #ff0000;
+    }
+    .box-2:hover{
+        transform: scale(1.1);
+    background-position: right;
+    box-shadow: 5px 5px 11px 0px #ff0000;
+     
+    }
+    .box-3:hover{
+        transform: scale(1.1);
+      background-position: right;
+      box-shadow: 5px 5px 11px 0px #ff0000;
+    }
+    .box-4:hover{
+        transform: scale(1.1);
+      background-position: right;
+      box-shadow: 5px 5px 11px 0px #ff0000;
+    }
+    .box-5:hover{
+        transform: scale(1.1);
+      background-position: center;
+      box-shadow: 5px 5px 11px 0px #ff0000;
+    }
+    .box-6:hover{
+        transform: scale(1.1);
+    background-position: right;
+    box-shadow: 5px 5px 11px 0px #ff0000;
+     
+    }
+    .box-7:hover{
+        transform: scale(1.1);
+      background-position: right;
+      box-shadow: 5px 5px 11px 0px #ff0000;
+    }
+    .box-8:hover{
+        transform: scale(1.1);
+      background-position: right;
+      box-shadow: 5px 5px 11px 0px #ff0000;
+    }
+    .box-9:hover{
+        transform: scale(1.1);
+      background-position: center;
+      box-shadow: 5px 5px 11px 0px #ff0000;
+    }
+    .inside-box{
+        position: absolute;
+        bottom: 45px;
+        left: 45px;
+    }
+    .box p{
+        padding: 10px;
+        width: 200px;
+        color: white;
+        border: 1px solid none;
+        background: linear-gradient(106deg, red 0%, rgba(0,0,255,1) 40%, rgba(255,255,255,1) 97%);
+
+    }
+    .btn2{
+        color: blue;
+        background-color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        padding:10px;
+        border: 1px solid blue;
+    }
+    
+    @media (max-width:1250px) {
+        section {
+            padding: 75px 10%;
+        }
+        .portoflio-container{
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+           }
+           
+    }
+    @media (max-width:750px) {
+        section {
+            padding: 75px 5%;
+        }
+        .portoflio-container{
+        margin: 15px;
+            display: grid;
+            grid-template-columns: 1fr ;
+            gap: 50px;
+            align-items: center;
+           }
+    }
+
+    /* End portoflio */
+
 /* Start Footer */
 footer {
     background-color: black;
